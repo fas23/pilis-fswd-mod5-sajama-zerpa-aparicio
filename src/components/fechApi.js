@@ -12,7 +12,7 @@ const ApiData = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`${API_URL}:endpoint`);
+      const response = await fetch(`${API_URL}:EventosJujuy`);
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
