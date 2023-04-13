@@ -1,0 +1,52 @@
+    [
+        {
+         "nombre": "Festival de la Quebrada",
+         "descripcion": "Un festival de música y cultura que celebra la diversidad de la región de la Quebrada de Humahuaca",
+         "fecha_inicio": "2023-07-15",
+         "fecha_fin": "2023-07-17",
+         "lugar": "Humahuaca, Jujuy",
+         "precio_entrada": 1500,
+         "organizador": "Asociación Cultural de Humahuaca",
+         "id": "1"
+        },
+        {
+         "nombre": "Fiesta de San Isidro",
+         "descripcion": "Una celebración religiosa con procesiones y festividades en honor a San Isidro Labrador",
+         "fecha_inicio": "2023-05-14",
+         "fecha_fin": "2023-05-15",
+         "lugar": "San Isidro, Jujuy",
+         "precio_entrada": 500,
+         "organizador": "Parroquia de San Isidro Labrador",
+         "id": "2"
+        },
+        {
+         "nombre": "Encuentro de Orquestas Infanto-Juveniles",
+         "descripcion": "Un encuentro de orquestas conformadas por niños y jóvenes de todo el país",
+         "fecha_inicio": "2023-08-10",
+         "fecha_fin": "2023-08-13",
+         "lugar": "San Salvador de Jujuy, Jujuy",
+         "precio_entrada": 300,
+         "organizador": "Ministerio de Cultura de la Nación",
+         "id": "3"
+        },
+        {
+         "nombre": "Feria del Libro de Jujuy",
+         "descripcion": "Una feria que reúne a autores, editores y amantes de la literatura de todo el país",
+         "fecha_inicio": "2023-06-20",
+         "fecha_fin": "2023-06-25",
+         "lugar": "San Salvador de Jujuy, Jujuy",
+         "precio_entrada": 200,
+         "organizador": "Fundación El Libro",
+         "id": "4"
+        },
+        {
+         "nombre": "Carrera de Trekking en la Yunga",
+         "descripcion": "Una carrera de trekking por los senderos de la selva de la Yunga jujeña",
+         "fecha_inicio": "2023-09-02",
+         "fecha_fin": "2023-09-03",
+         "lugar": "San Francisco, Jujuy",
+         "precio_entrada": 800,
+         "organizador": "Asociación de Turismo Aventura de Jujuy",
+         "id": "5"
+        }
+       ]
