@@ -1,21 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { MainStackScreen } from './src/screens/event-list/MainStackScreen';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { EventDetailScreen } from './src/screens/event-detail/EventDetailScreen';
+
+const EventListStack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app! que no? </Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <NavigationContainer>
+        <EventListStack.Navigator screenOptions={{ headerShown: false }}>
+          {/* Pantallas con tab */}
+          <EventListStack.Screen name="Main" component={MainStackScreen} />
+          {/* Pantallas con sin tab */}
+          <EventListStack.Screen name="EventDetail" component={EventDetailScreen} />
+        </EventListStack.Navigator>
+      </NavigationContainer>
+      <StatusBar style='auto' />
+    </>
   );
+
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-});
