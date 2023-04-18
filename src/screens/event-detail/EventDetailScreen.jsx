@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Text, View, ScrollView, Image } from "react-native";
 import { styles } from "./EventDetailScreen.styles";
 import MapView, { Marker } from "react-native-maps";
+import { Link } from "@react-navigation/native";
+import { UserContext } from "../../contexts/UserContext";
 
 export const EventDetailScreen = ({ route }) => {
   //console.warn(route.params);
   const { item } = route.params;
+  const { currentUser } = useContext(UserContext);
   return (
     <ScrollView style={styles.container}>
       <View>
@@ -18,6 +21,17 @@ export const EventDetailScreen = ({ route }) => {
         <Text style={styles.title}>{item.nombre}</Text>
         <Text style={styles.description}>{item.descripcion}</Text>
         <Text style={styles.price}>{item.precio_entrada}</Text>
+        {currentUser && (
+          <Link
+            style={styles.webButton}
+            to={{
+              screen: "EventDetailWeb",
+              params: { url: "https://example.com" },
+            }}
+          >
+            Reservar
+          </Link>
+        )}
         <Text style={styles.description}>{item.organizador}</Text>
       </View>
       <MapView
