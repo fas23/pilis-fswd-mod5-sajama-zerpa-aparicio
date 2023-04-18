@@ -6,7 +6,8 @@ export const styles = StyleSheet.create({
     flex: 1,
     padding: 16,
     backgroundColor: '#fff',
-    marginTop: StatusBar.currentHeight
+    marginTop: StatusBar.currentHeight,
+    justifyContent: 'center'
   },
   title: {
     fontSize: 24,

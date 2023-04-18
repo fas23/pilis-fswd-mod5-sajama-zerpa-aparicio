@@ -1,5 +1,5 @@
 import { StatusBar, StyleSheet } from 'react-native'
-import { COLORS, FONT_SIZE } from '../../utils/theme'
+import { COLORS } from '../../utils/theme'
 
 export const styles = StyleSheet.create({
     container: {
@@ -23,7 +23,8 @@ export const styles = StyleSheet.create({
     description: {
         fontSize: 18,
         lineHeight: 26,
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 5
     },
     image: {
         height: 200,
@@ -44,5 +45,9 @@ export const styles = StyleSheet.create({
         paddingVertical: 8,
         width: 100,
         marginTop: 10
+    },
+    fecha: {
+        color: COLORS.primary,
+        fontSize: 20
     }
 })

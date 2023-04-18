@@ -20,7 +20,8 @@ export const EventDetailScreen = ({ route }) => {
       <View style={styles.textContainer}>
         <Text style={styles.title}>{item.nombre}</Text>
         <Text style={styles.description}>{item.descripcion}</Text>
-        <Text style={styles.price}>{item.precio_entrada}</Text>
+        <Text style={styles.price}>${item.precio_entrada}</Text>
+        <Text style={styles.fecha}>{item.fecha_inicio}</Text>
         {currentUser && (
           <Link
             style={styles.webButton}
