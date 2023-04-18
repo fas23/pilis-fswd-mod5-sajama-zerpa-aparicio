@@ -3,20 +3,22 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { EventListScreen } from './src/screens/event-list/EventListScreen';
+import { EventListStackScreen } from './src/screens/event-list/EventListStackScreen';
+import { ProfileScreen } from './src/screens/profile/ProfileScreen';
 import { HomeScreen } from './src/screens/home/HomeScreen';
 import { COLORS, SPACING } from './src/utils/theme';
 
+const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Home: 'home',
-  Explorar: 'search'
-  //Profile: 'person'
+  Inicio: 'home',
+  Explorar: 'search',
+  Perfil: 'person'
 }
 
 
 const screenOptions = ({ route }) => {
-  const iconName = TAB_ICON[route.name]// TAB_ICON[Home]
+  const iconName = TAB_ICON[route.name]
   return {
     tabBarIcon: ({ size, color }) => (
       <Ionicons name={iconName} size={size} color={color} />
@@ -29,14 +31,14 @@ const screenOptions = ({ route }) => {
   }
 }
 
-const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <>
       <NavigationContainer>
         <Tab.Navigator screenOptions={screenOptions}>
-          <Tab.Screen name='Home' component={HomeScreen} />
-          <Tab.Screen name='Explorar' component={EventListScreen} />
+          <Tab.Screen name='Inicio' component={HomeScreen} />
+          <Tab.Screen name='Explorar' component={EventListStackScreen} />
+          <Tab.Screen name='Perfil' component={ProfileScreen} />
         </Tab.Navigator>
       </NavigationContainer>
       <StatusBar style='auto' />
