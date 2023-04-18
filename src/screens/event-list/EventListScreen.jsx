@@ -21,7 +21,7 @@ export const EventListScreen = ({ navigation }) => {
   }, []);
 
   const events = ({ item }) => (
-    <Pressable onPress={() => navigation.navigate("Detalle", { item })}>
+    <Pressable onPress={() => navigation.navigate("EventDetail", { item })}>
       <View style={styles.itemContainer}>
         <Image
           source={{ uri: `https://drive.google.com/uc?id=${item.imagen}` }}
