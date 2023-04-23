@@ -9,15 +9,18 @@ export const styles = StyleSheet.create({
   bgImage: {
     resizeMode: 'cover',
     width: '100%',
-    height: 600,
+    height: 800,
     justifyContent: 'center',
     top: -50
   },
   title: {
-    fontSize: FONT_SIZE.xxxl,
+    fontSize: FONT_SIZE.xl,
+    fontStyle: 'italic',
     fontWeight: 'bold',
-    color: COLORS.white,
-    width: '75%',
-    marginLeft: 25
+    textAlign: 'center',
+    color: COLORS.green1,
+    width: '90%',
+    height: 500,
+    marginLeft: 20
   }
 })

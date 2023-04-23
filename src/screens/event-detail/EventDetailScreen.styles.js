@@ -4,7 +4,7 @@ import { COLORS } from '../../utils/theme'
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.orange,
         marginTop: StatusBar.currentHeight
     },
     textContainer: {
@@ -29,7 +29,8 @@ export const styles = StyleSheet.create({
     image: {
         height: 200,
         width: '100%',
-        resizeMode: 'cover'
+        resizeMode: 'cover',
+        borderRadius: 10
     },
     map: {
         height: 250,

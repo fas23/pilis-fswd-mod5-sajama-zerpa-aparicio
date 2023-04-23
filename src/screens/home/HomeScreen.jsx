@@ -6,7 +6,7 @@ import { styles } from './HomeScreen.styles'
 export const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground style={styles.bgImage} source={require('../../../assets/llamaJujuy.png')}>
+      <ImageBackground style={styles.bgImage} source={require('../../../assets/salinasGrandes.jpg')}>
         <Text style={styles.title}>
           El sitio donde vas a encontrar todos los eventos de jujuy!!
         </Text>
