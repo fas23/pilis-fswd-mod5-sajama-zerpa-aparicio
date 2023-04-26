@@ -66,7 +66,7 @@ export const LoginScreen = () => {
           />
         )}
         name="password"
-        rules={{ required: "La constraseña es requerida" }}
+        rules={{ required: "La contraseña es requerida" }}
       />
       {errors.password && (
         <Text style={styles.errorText}>{errors.password.message}</Text>
